@@ -1,0 +1,20 @@
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login h1 {
+  color: var(--amarelo);
+  font-family: 'Montserrat Black';
+  text-align: center;
+}
+
+#login .btn {
+  background-color: var(--amarelo);
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Montserrat Bold';
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}

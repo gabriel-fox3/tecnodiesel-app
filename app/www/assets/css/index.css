@@ -1,0 +1,208 @@
+:root {
+    --azul: #015CE3;
+    --amarelo: #FFD600;
+    --azul-escuro: #01317A;
+}
+
+#app {
+    background-color: var(--azul);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#hidden_content {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-left: 100%;
+    transition: .3s ease-in-out;
+    background-color: var(--azul);
+}
+
+#hidden_content.show {
+    margin-left: 0;
+}
+
+.text-azul {
+    color: var(--azul);
+}
+
+.text-azul-escuro {
+    color: var(--azul-escuro);
+}
+
+.text-amarelo {
+    color: var(--amarelo);
+}
+
+/* input */
+.form-control-custom {
+    width: 100%;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Montserrat Regular';
+}
+  
+.form-control-custom::placeholder {
+    color: #fff;
+    font-family: 'Montserrat Regular';
+}
+
+.form-control-custom.white {
+    background-color: white;
+    color: #888;
+}
+
+.form-control-custom.white::placeholder {
+    color: #888;
+}
+/* input */
+
+/* header */
+#app .header {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+#app .header > .img {
+    background-image: url(../img/logo-2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+    margin: auto 0;
+}
+
+#app .header > .menu > a {
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#app .header .borda {
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: var(--azul-escuro);
+    display: block;
+    bottom: 15px;
+    position: absolute;
+}
+/* header */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: 9;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background: var(--amarelo);
+    z-index: 99;
+    margin-left: -100%;
+    transition: .3s ease-out;
+}
+
+.sidebar.show {
+    margin-left: 0;
+}
+
+.sidebar .info {
+    background-color: var(--azul-escuro);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.sidebar .info .foto {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .info h5 {
+    color: #fff;
+    font-family: 'Montserrat Bold';
+}
+
+.sidebar .nav ul {
+    width: 100%;
+}
+
+.sidebar .nav ul li a {
+    font-size: 17px;
+    color: var(--azul-escuro);
+    text-decoration: none;
+    padding: 15px 40px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid var(--azul-escuro);
+    font-family: 'Montserrat SemiBold';
+    transition: .2s ease;
+}
+
+.sidebar .nav ul li a:hover, .sidebar .nav ul li a:active, .sidebar .nav ul li a:focus {
+    background: var(--azul);
+    color: var(--amarelo);
+}
+
+/* footer */
+.form .footer {
+    margin-top: 80px;
+}
+
+.form .footer hr {
+    border-color: #fff;
+}
+
+.form .footer .botoes {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.form .footer .botoes .btn {
+    padding: 10px 20px;
+    background: #fff;
+    text-transform: none;
+    margin-left: 15px;
+    color: var(--azul-escuro);
+    font-family: 'Montserrat Regular';
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+.form .footer .botoes .btn.amarelo {
+    background: var(--amarelo);
+}

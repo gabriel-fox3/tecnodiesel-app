@@ -1,0 +1,35 @@
+#home .botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+  margin-top: auto;
+  padding-top: 70px;
+}
+
+#home .botoes a {
+  background-color: #fff;
+  color: var(--azul-escuro);
+  width: 80%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Montserrat Bold';
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+  transition: .2s ease;
+}
+
+#home .botoes a.destaque {
+  background-color: var(--amarelo);
+}
+
+#home .botoes a:hover, #home .botoes a:active, #home .botoes a:focus {
+  background-color: var(--azul-escuro);
+  color: #fff;
+  text-decoration: none;
+}
