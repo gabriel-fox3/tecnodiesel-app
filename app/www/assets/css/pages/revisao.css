@@ -1,0 +1,51 @@
+#revisao .botoes {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#revisao .botoes a {
+  background-color: #fff;
+  font-size: 14px;
+  color: var(--azul-escuro);
+  box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+  min-width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: 'Montserrat SemiBold';
+  transition: .3s ease;
+}
+
+#revisao .botoes a:hover, #revisao .botoes a:active, #revisao .botoes a:focus {
+  background-color: var(--amarelo);
+  text-decoration: none;
+}
+
+
+/* cliente */
+#cliente label {
+  color: #fff;
+  font-family: 'Montserrat SemiBold';
+  font-size: 16px;
+}
+
+#cliente .btn-cliente {
+  background-color: var(--amarelo);
+  padding: 15px;
+  display: block;
+  color: var(--azul-escuro);
+  text-transform: none;
+  font-family: 'Montserrat SemiBold';
+  transition: .3s ease;
+}
+
+#cliente .btn-cliente:hover, #cliente .btn-cliente:active, #cliente .btn-cliente:focus {
+  background-color: var(--azul-escuro);
+  color: #fff;
+}

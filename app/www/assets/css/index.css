@@ -4,6 +4,7 @@
     --azul-escuro: #01317A;
 }
 
+
 #app {
     background-color: var(--azul);
     width: 100vw;
@@ -179,20 +180,21 @@
 
 /* footer */
 .form .footer {
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .form .footer hr {
     border-color: #fff;
 }
 
-.form .footer .botoes {
+.form .footer .controles {
     display: flex;
     width: 100%;
     justify-content: flex-end;
 }
 
-.form .footer .botoes .btn {
+.form .footer .controles .btn {
     padding: 10px 20px;
     background: #fff;
     text-transform: none;
@@ -203,6 +205,6 @@
     border-radius: 5px;
 }
 
-.form .footer .botoes .btn.amarelo {
+.form .footer .controles .btn.amarelo {
     background: var(--amarelo);
 }

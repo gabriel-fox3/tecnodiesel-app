@@ -51,6 +51,13 @@ function events() {
     toggleMenu();
   });
 
+  $('#btnLogout').on('click', function () {
+    toggleMenu();
+    setTimeout(() => {
+      location.href = 'index.html';
+    }, 300);
+  })
+
   $('a').on('click', function (e) {
     e.preventDefault();
     let page = $(this).attr('href');
