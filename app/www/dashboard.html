@@ -3,7 +3,7 @@
 <div class="header">
   <div class="img"></div>
   <div class="menu">
-    <a href="javascript:;" id="btnMenuToggle">
+    <a id="btnMenuToggle">
       <i class="fas fa-bars"></i>
     </a>
     <div class="sidebar">
@@ -11,13 +11,13 @@
         <div class="foto">
           <i class="fas fa-user fa-2x text-azul-escuro"></i>
         </div>
-        <h5 class="ml-3 mb-0">Olá, <br>Gabriel Sarates</h5>
+        <h5 class="ml-3 mb-0">Olá, <br><span id="me_name"></span></h5>
       </div>
       <div class="nav">
         <ul class="list-unstyled">
           <li><a href="#">Minha Conta</a></li>
           <li><a href="#">Histórico de Pedidos</a></li>
-          <li><a href="javascript:;" id="btnLogout">Sair</a></li>
+          <li><a id="btnLogout">Sair</a></li>
         </ul>
       </div>
     </div>
@@ -29,9 +29,20 @@
     <div class="col-12">
       <div class="botoes">
         <a href="cadastrar_cliente.html">Cadastrar cliente</a>
-        <a href="#">Lançar pedido</a>
+        <a href="lancar_pedido.html">Lançar pedido</a>
         <a href="revisao.html">Revisão</a>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+
+  $(document).ready(function () {
+    var c = connect;
+    let me = c.handle_obj('get_key', 'session');
+    let u = me.usuario;
+    $('#me_name').text(u.nome);
+  });
+
+</script>

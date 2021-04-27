@@ -1,7 +1,7 @@
 #revisao .botoes {
   height: calc(100vh - 100px);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-radius: 5px;
   font-family: 'Montserrat SemiBold';
   transition: .3s ease;
@@ -49,3 +49,77 @@
   background-color: var(--azul-escuro);
   color: #fff;
 }
+/* cliente */
+
+/* checklist */
+.form h5 {
+  color: #fff;
+  font-family: 'Montserrat SemiBold';
+}
+.form .checklist {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+.form .checklist .inputs {
+  width: 40%;
+}
+
+.form .checklist .inputs .bmd-form-group {
+  padding: 0;
+}
+
+.form .checklist .inputs label .bmd-radio {
+  padding: 0;
+  top: -15px;
+  left: -1px;
+}
+
+.form .checklist .inputs label .bmd-radio::after, .form .checklist .inputs label .bmd-radio::before {
+  width: 27px;
+  height: 27px;
+}
+
+.form .checklist .inputs label .bmd-radio::after {
+  border-color: var(--azul-escuro)!important;
+}
+
+.form .checklist .inputs .radio label input[type=radio]:checked~.bmd-radio:before,
+.form .checklist .inputs .radio label input[type=radio]~.bmd-radio:before { 
+  background-color: var(--azul-escuro)!important;
+}
+
+.form .checklist .inputs label {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+}
+
+.form .checklist .inputs .radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.form .checklist .inputs .bmd-form-group > .label {
+  font-size: 11px;
+  font-family: 'Montserrat SemiBold';
+  text-transform: uppercase;
+  color: #000;
+  padding: 0;
+}
+
+.form .checklist .text {
+  font-size: 13px;
+  font-family: 'Montserrat Regular';
+  color: #000;
+  text-align: right;
+}
+/* checklist */

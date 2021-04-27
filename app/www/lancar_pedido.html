@@ -1,0 +1,202 @@
+<link rel="stylesheet" href="assets/css/pages/lancar_pedido.css">
+
+<div class="header">
+  <a href="dashboard.html" class="text-dark"><i class="fas fa-chevron-left fa-2x"></i></a>
+  <h5 class="m-0 mx-auto font-weight-bold">Lançar pedido</h5>
+  <div class="borda"></div>
+</div>
+
+<div class="container-fluid" id="lancar_pedido">
+  <div class="row">
+    <div class="col-10 mx-auto">
+      <div class="form">
+        <div class="form-group mt-4">
+          <label>Cliente</label>
+          <a href="javascript:;" data-toggle="modal" data-target="#modal_cliente" class="btn btn-cliente">Selecionar cliente</a>
+        </div>
+
+        <div class="form-group mt-4">
+          <label>Produto</label>
+          <a href="javascript:;" data-toggle="modal" data-target="#modal_produto" class="btn btn-produto">Selecionar produto</a>
+        </div>
+  
+        <div class="finalizar_pedido">
+          <div class="head">
+            <h5>Finalizar pedido</h5>
+            <hr>
+          </div>
+          <div class="content">
+            <h5 class="text-center">Frete</h5>
+            <ul class="list-unstyled list-inline d-flex justify-content-around align-items-center">
+              <li class="list-inline-item">
+                <span class="bmd-form-group is-filled">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span class="bmd-radio"></span>
+                      CIF
+                    </label>
+                  </div>
+                </span>
+              </li>
+              <li class="list-inline-item">
+                <span class="bmd-form-group is-filled">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked=""><span class="bmd-radio"></span>
+                      FOB
+                    </label>
+                  </div>
+                </span>
+              </li>
+            </ul>
+
+            <h5>Prazo</h5>
+            <div class="select-wrapper">
+              <select>
+                <option value="10">10 dias</option>
+                <option value="30">30 dias</option>
+                <option value="60">60 dias</option>
+                <option value="90">90 dias</option>
+              </select>
+            </div>
+
+            <h5 class="mt-4">Observaçoes</h5>
+            <div class="form-group">
+              <textarea class="form-control-custom white" rows="3" placeholder="Lorem ipsum"></textarea>
+            </div>
+
+            <a href="javascript:;" class="btn btn-salvar-pedido">Salvar pedido</a>
+          </div>
+        </div>        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cliente -->
+<div class="modal fade modal-custom" id="modal_cliente" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Pesquisar cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="form-group">
+            <div class="input-group-custom">
+              <input type="text" class="form-control-custom" placeholder="Nome, CPF">
+              <div class="input-group-append">
+                <button class="btn" type="button"><i class="far fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group">
+            <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Roberto Costa</h5>
+                <small>Santo Ângelo - RS</small>
+              </div>
+              <p class="mb-3">Costa Maquinários</p>
+              <small>1234.123/1234-55</small>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Roberto Costa</h5>
+                <small>Santo Ângelo - RS</small>
+              </div>
+              <p class="mb-3">Costa Maquinários</p>
+              <small>1234.123/1234-55</small>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Roberto Costa</h5>
+                <small>Santo Ângelo - RS</small>
+              </div>
+              <p class="mb-3">Costa Maquinários</p>
+              <small>1234.123/1234-55</small>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
+        <button type="button" class="btn btn-primary">Selecionar cliente</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Produto -->
+<div class="modal fade modal-custom" id="modal_produto" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Pesquisar produto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <hr>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="form-group">
+            <div class="input-group-custom">
+              <input type="text" class="form-control-custom" placeholder="Nome do produto ou código">
+              <div class="input-group-append">
+                <button class="btn" type="button"><i class="far fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group">
+            <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">#1111 - Produto xxx</h5>
+                <h5>R$ 700,00</h5>
+              </div>
+              <div class="badge badge-info">Marca</div>
+              <p class="mb-3 mt-2">Lorem ipsum</p>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">#1111 - Produto xxx</h5>
+                <h5>R$ 700,00</h5>
+              </div>
+              <div class="badge badge-info">Marca</div>
+              <p class="mb-3 mt-2">Lorem ipsum</p>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">#1111 - Produto xxx</h5>
+                <h5>R$ 700,00</h5>
+              </div>
+              <div class="badge badge-info">Marca</div>
+              <p class="mb-3 mt-2">Lorem ipsum</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
+        <button type="button" class="btn btn-primary">Selecionar cliente</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', event => {
+    var button = $(event.relatedTarget);
+    var modal = $(this);
+    // Use above variables to manipulate the DOM
+    
+  });
+</script>

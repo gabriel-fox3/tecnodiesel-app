@@ -8,30 +8,62 @@
   <div class="row">
     <div class="col-10 mx-auto">
       <div class="form mt-5">
-        <div class="form-group">
-          <input type="text" class="form-control-custom white" placeholder="Nome">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control-custom white" placeholder="CPF">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control-custom white" placeholder="Telefone">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control-custom white" placeholder="E-mail">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control-custom white" placeholder="Endereço">
-        </div>
-
-        <div class="footer">
-          <hr>
-          <div class="controles">
-            <a href="dashboard.html" class="btn">cancelar</a>
-            <a href="" class="btn amarelo">Finalizar sessão</a>
+        <form id="form_cad_cliente">
+          <div class="form-group">
+            <input type="text" class="form-control-custom white" name="inputNome" required placeholder="Nome">
           </div>
-        </div>
+          <div class="form-group">
+            <input type="text" class="form-control-custom white" name="inputNome_fantasia" required placeholder="Nome Fantasia">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control-custom white" name="inputDoc" required placeholder="CPF / CNPJ">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control-custom white" name="inputTelefone" required placeholder="Telefone">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control-custom white" name="inputEmail" required placeholder="E-mail">
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <input type="text" class="form-control-custom white" name="inputCep" required placeholder="CEP">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <input type="text" class="form-control-custom white" name="inputCidade" required placeholder="Cidade">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <input type="text" class="form-control-custom white" name="inputEstado" required placeholder="Estado">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <input type="text" class="form-control-custom white" name="inputEndereco" required placeholder="Endereço">
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <hr>
+            <div class="controles">
+              <a href="dashboard.html" class="btn">cancelar</a>
+              <button type="submit" class="btn amarelo">Finalizar sessão</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+
+  $(document).ready(function () {
+    events_scripts();
+  });
+
+</script>

@@ -2,7 +2,7 @@
 #home .botoes {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   height: 70vh;
   margin-top: auto;
@@ -23,6 +23,7 @@
   text-transform: uppercase;
   box-shadow: 5px 5px 5px rgba(0,0,0,.4);
   transition: .2s ease;
+  margin-bottom: 25px;
 }
 
 #home .botoes a.destaque {

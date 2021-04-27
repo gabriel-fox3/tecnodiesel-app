@@ -52,6 +52,8 @@ function events() {
   });
 
   $('#btnLogout').on('click', function () {
+    var c = connect;
+    c.handle_obj('remove');
     toggleMenu();
     setTimeout(() => {
       location.href = 'index.html';

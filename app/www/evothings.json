@@ -1,0 +1,18 @@
+{
+  "name": "tecnodiesel-app",
+  "version": "1.0.0",
+  "title": "Tecnodiesel App",
+  "description": "Em desenvolvimento",
+  "long-description": "Em desenvolvimento",
+  "tags": [],
+  "libraries": [],
+  "index-file": "index.html",
+  "uuid": "5f9c4b3b-9928-4baa-b31f-d6c1f95a8628",
+  "icon": "app-icon.png",
+  "cordova-id": "fox.tecnodiesel.app",
+  "doc-url": "https://evothings.com/2.2/doc/examples/hello-world.html",
+  "plugins": [],
+  "author-name": "FoxThree",
+  "author-email": "gabriel@foxthree.com.br",
+  "author-url": "https://foxthree.com.br"
+}

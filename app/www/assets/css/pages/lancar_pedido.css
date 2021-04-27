@@ -1,0 +1,121 @@
+/* cliente */
+#lancar_pedido label {
+  color: #fff;
+  font-family: 'Montserrat SemiBold';
+  font-size: 16px;
+}
+
+#lancar_pedido .btn-cliente {
+  background-color: var(--amarelo);
+  padding: 15px;
+  display: block;
+  color: var(--azul-escuro);
+  text-transform: none;
+  font-family: 'Montserrat SemiBold';
+  transition: .3s ease;
+}
+
+#lancar_pedido .btn-cliente:hover, #lancar_pedido .btn-cliente:active, #lancar_pedido .btn-cliente:focus {
+  background-color: var(--azul-escuro);
+  color: #fff;
+}
+/* cliente */
+
+/* produto */
+#lancar_pedido label {
+  color: #fff;
+  font-family: 'Montserrat SemiBold';
+  font-size: 16px;
+}
+
+#lancar_pedido .btn-produto {
+  background-color: var(--amarelo);
+  padding: 15px;
+  display: block;
+  color: var(--azul-escuro);
+  text-transform: none;
+  font-family: 'Montserrat SemiBold';
+  transition: .3s ease;
+}
+
+#lancar_pedido .btn-produto:hover, #lancar_pedido .btn-produto:active, #lancar_pedido .btn-produto:focus {
+  background-color: var(--azul-escuro);
+  color: #fff;
+}
+/* produto */
+
+.finalizar_pedido {
+  background-color: #F4F0F0;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.finalizar_pedido .head {
+  padding: 20px 15px;
+}
+
+.finalizar_pedido .head h5 {
+  margin-bottom: 15px;
+  font-family: 'Montserrat SemiBold';
+}
+
+.finalizar_pedido .head hr {
+  margin: 0;
+  border-color: var(--azul-escuro);
+}
+
+.finalizar_pedido .content {
+  padding: 15px;
+}
+
+.finalizar_pedido .content h5 {
+  font-family: 'Montserrat Regular';
+  font-size: 16px;
+}
+
+.finalizar_pedido .bmd-form-group label {
+  color: #000!important;
+  font-family: 'Montserrat Regular'!important;
+}
+
+.finalizar_pedido .select-wrapper {
+  position: relative;
+}
+
+.finalizar_pedido .select-wrapper select {
+  background-color: #fff;
+  padding: 10px 15px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+}
+
+.finalizar_pedido .select-wrapper:after {
+  position: absolute;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  content: "\f078";
+  right: 15px;
+  top: calc(50% - 8px);
+  color: #000;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalizar_pedido .btn-salvar-pedido {
+  display: block;
+  background: var(--azul-escuro);
+  color: #fff;
+  text-transform: none;
+  font-family: 'Montserrat SemiBold';
+  font-size: 15px;
+}
+
+.finalizar_pedido .btn-salvar-pedido:hover, .finalizar_pedido .btn-salvar-pedido:active, .finalizar_pedido .btn-salvar-pedido:focus {
+  background-color: var(--amarelo);
+  color: var(--azul-escuro);
+}
+
